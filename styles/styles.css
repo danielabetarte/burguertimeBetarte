@@ -1,0 +1,716 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Lato:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(76, 36, 2);
+}
+
+.hero{
+    height: 100vh;
+    background-image: url(../imagenes/patern4.jpg);
+}
+
+.hero_contacto {
+    background-image: url(../imagenes/pattern3.webp);
+}
+
+.hero_header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+
+}
+
+.hero_header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+.header_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.header_right p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header_right .menu{
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    display: flex;
+    font-size: 1.4rem;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+
+.hero_main {
+    display: flex;
+    padding-inline: 6rem ;
+
+}
+
+.hero_main > div {
+    flex: 1;
+}
+
+.hero_texto {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.hero_texto h4 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    border: 2px dashed rgb(76, 36, 2);
+    width: max-content;
+    padding: 0.6rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.hero_texto h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 4rem;
+    line-height: 1;
+    text-shadow: 4px 4px white ;
+}
+
+.hero_texto h3 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+    text-shadow: 4px 4px white ;
+}
+
+.hero_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    position: relative;
+   
+}
+
+.hero_img img{
+    max-width: 800px;
+}
+
+.hero_img:hover {
+    transform: scale(1.1) translateY(-25px);
+}
+
+
+.oferta{
+    position: absolute;
+    bottom: 6rem;
+    left: 5rem;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 2px dashed white;
+    outline: 5px solid red; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+}
+
+.precio,
+.promo,
+.precio small {
+    color: white;
+}
+
+.precio {
+    padding-top: 30px;
+    font-size: 3rem;
+    line-height: 0;
+}
+
+.precio small {
+    font-size: 1.4rem;
+}
+
+.promo{
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: 2px;
+
+}
+
+/* GRID */
+
+.grid{
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item1 item3";
+    gap: 2rem;
+}
+
+.grid_item{
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+  
+}
+
+.grid_item h5,
+.grid_item h4 {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.grid_item h5{
+    font-size: 1rem;
+}
+
+.grid_item h4 {
+    font-size: 1.6rem;
+}
+
+.grid_item1 {
+    grid-area: item1;
+    background-image: url(../imagenes/1.webp);
+    height: 400px;
+}
+
+.grid_item2 {
+    grid-area: item2;
+    background-image: url(../imagenes/2.webp);
+}
+
+.grid_item3 {
+    grid-area: item3;
+    background-image: url(../imagenes/3.jpg);
+}
+
+.grid_item1:hover {
+    transform: scale(1) translateY(-10px);
+}
+
+.grid_item2:hover {
+    transform: scale(1) translateY(-10px);
+}
+
+.grid_item3:hover {
+    transform: scale(1) translateY(-10px);
+}
+
+
+
+/* ESCOJE & DISFRUTA */
+
+.disfrutar {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.titulos {
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulos h4 {
+    font-family: 'Bebas Neue', cursive;
+    background-color: rgb(199, 180, 5);
+    font-size:1.4rem ;
+    padding: .5rem 1rem .25rem 1rem;
+}
+
+.titulos h2{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 3rem;
+}
+
+.titulos p {
+    font-family: 'Lato', sans-serif;
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img {
+    max-width: 100% ;
+}
+
+.card h4{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+}
+
+.card p {
+    font-family: 'Lato', sans-serif;
+    width: 70%;
+    text-align: center;
+}
+.card a {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1rem;
+    color: white;
+    background-color: rgb(210, 16, 16);
+    padding: .75rem 1rem;
+    text-decoration: none;
+}
+
+/* EVENTO */
+
+.evento{
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.iner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px black;
+}
+
+.iner_left{
+    padding-block: 2rem;
+}
+
+.iner_left h5{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+    color: rgb(96, 96, 96);
+    letter-spacing: 1px ;
+}
+
+.iner_left h3 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 2rem ;
+}
+
+.iner_left p {
+    font-family: 'Lato', sans-serif;
+    color: rgb(96, 96, 96);
+    font-size: 1.1rem;
+    width: 85%;  
+}
+
+.iner_left,
+.iner_right{
+    flex: 1;
+    min-width: 0;
+}
+
+
+.iner_right img {
+    max-width: 100%;
+}
+
+
+
+/* MENU CARTITAS */
+
+.cartitas_main{
+    padding: 6rem;
+}
+
+.cartitas{
+    width: 30%;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin-block: 1.5%;
+    margin-block: 20px;
+    overflow: auto;
+
+}
+
+.cartitas_imagen{
+    width: 100%;
+}
+
+.cartitas h4{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.cartitas p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+    
+}
+
+.cartita_boton {
+    font-family: 'Alfa Slab One', cursive;
+    background-color: rgb(210, 16, 16) ;
+    color:white;
+    text-align: center;
+    padding: .75rem 1rem;
+    text-decoration: none;
+
+
+}
+
+
+.cartitas:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* RESERVACIONES */
+
+.reserva{
+    padding: 6rem ;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image:
+     url(../imagenes/bg\ reserva1.png),
+     url(../imagenes/bg\ reserva2.png),
+     url(../imagenes/bg\ reserva3.png);
+    background-size: 
+    400px,
+    300px,
+    300px;
+    background-position: 
+    10px center,
+    1150px 100px,
+    150px center;
+
+}
+
+.reserva_heading{
+    text-align: center;
+}
+
+.reserva_heading h5 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.5rem;
+}
+.reserva_heading h4 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.5rem;
+}
+
+.reserva_form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name   email"
+    "date   time"
+    "people button";
+    width: 30rem;
+    gap: 1rem;
+
+}
+
+.reserva_form input{
+    padding: 1rem;
+    font-family: 'Bebas Neue', cursive;  
+    color: black;
+}
+
+.reserva_form .name {
+    grid-area: name;
+}
+
+.reserva_form .email {
+    grid-area: email;
+}
+
+.reserva_form .date {
+    grid-area: date;
+}
+
+.reserva_form .time {
+    grid-area: time;
+}
+
+.reserva_form .people {
+    grid-area: people;
+}
+
+.reserva_form .button {
+    grid-area: button;
+    border: 0;
+    background-color:  rgb(210, 16, 16);
+    font-family: 'Alfa Slab One', cursive;
+    text-transform: capitalize;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+
+/* footer */
+
+footer{
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagenes/footer.webp);
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    position: relative;
+}
+
+.footer::before{
+    content:" ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.759);
+}
+
+footer h2,
+footer p,
+footer i {
+    color: white;
+}
+
+.footer_top,
+.footer_boton {
+    z-index: 1;
+}
+
+.footer_top{
+    display: flex;
+    padding-block: 3rem;
+}
+
+
+.footer_top > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_top h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+}
+
+.footer_top p {
+    font-family: 'Lato', sans-serif;
+}
+
+.direccion{
+    align-items: flex-end;
+    
+}
+
+.direccion p {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    
+}
+
+.footer_boton{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3rem;
+}
+
+.footer_boton p {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.footer_boton .iconos {
+    display: flex;
+    gap: .5rem;
+}
+
+
+
+@media screen and (max-width: 768px){
+
+    .hero {
+        height: 50%;
+    }
+
+    .hero_contacto{
+        width: 100%;
+
+    }
+    
+
+    .hero_header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .header_right{
+        align-items: flex-start;
+    }
+
+    .hero_img {
+        padding-top: 0;
+    }
+
+    .hero_main{
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .grid_item{
+        flex: 1;
+    }
+
+    .grid_item1{
+        padding-bottom: 4rem;
+    }
+
+    .titulos{
+        padding-inline: 0;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .cartitas{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 80%;
+    }
+
+
+    .evento{
+        padding: 2rem;
+    }
+
+    .evento .iner {
+        flex-direction: column;
+    }
+
+    .evento .iner_right {
+        order: -1;
+    }
+
+    .reserva{
+        padding: 2rem;
+        background-size: 
+        200px,
+        150px,
+        150px;
+        background-position: 
+        5px center,
+        500px 50px,
+        80px 400px;
+    }
+
+    .reserva_form{
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    footer{
+        padding: 2rem;
+    }
+
+    .footer_top{
+        flex-direction: column;
+        padding: 0;
+        gap:2rem ;
+    }
+
+    .direccion{
+        align-items: flex-start;
+    }
+
+    .footer_boton{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .iconos{
+        order: -1;
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    .hero {
+        height: 50%;
+    }
+    .hero_contacto{
+        width: 100%;
+    }
+    
+    .hero_header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header_right{
+        align-items: flex-start;
+    }
+    .hero_img {
+        padding-top: 0;
+    }
+    .hero_main{
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .reserva{
+        background-image: none;
+    }
+    
+
+}
+
+
+
